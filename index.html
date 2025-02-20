@@ -985,6 +985,7 @@
                 loadingScreen.style.transition = "opacity 1s ease-in-out"; // フェードアウトを滑らかに
 
                 loadingScreen.style.opacity = "0"; // 透明にする
+                loadingScreen.style.pointerEvents = "none"; 
 
  
 
@@ -992,7 +993,7 @@
 
                     loadingScreen.style.display = "none"; // 完全に消す
 
-                }, 2000); // フェードアウト後に非表示（1秒後）
+                }, 1000); // フェードアウト後に非表示（1秒後）
 
             }, 4000); // 3秒間ローディングを表示
 
